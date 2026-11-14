@@ -172,7 +172,7 @@ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPro
 if('serviceWorker'in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>
-let client;try{client=window.supabase?.createClient('https://tiambzhpzdkgfscjrij.supabase.co','sb_publishable_O_mhwrURqLTfbJM2M39C3g_Ozo0OQlv');}catch(e){console.error('Falha ao inicializar Supabase',e);}
+let client;try{client=window.supabase?.createClient('https://tiambzhpzdkgmfscjrij.supabase.co','sb_publishable_O_mhwrURqLTfbJM2M39C3g_Ozo0OQlv');}catch(e){console.error('Falha ao inicializar Supabase',e);}
 const q=id=>document.getElementById(id), app=document.querySelector('.app');let mode='login',user=null,queue=Promise.resolve(),failed=false,known=new Map(),remotePaths=new Set();
 const status=document.createElement('p');status.style.cssText='padding:8px;color:#38bdf8';app.prepend(status);
 function notice(message,kind='info'){q('authStatus').textContent=message;q('authStatus').dataset.kind=kind;}
